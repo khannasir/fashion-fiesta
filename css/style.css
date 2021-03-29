@@ -1,0 +1,282 @@
+@import url('https://fonts.googleapis.com/css2?family=Epilogue&display=swap');
+*{
+	margin:0
+	padding:0;
+	box-sizing: border-box;
+	font-family: 'Epilogue', sans-serif;
+}
+#preloader{
+    position: fixed;
+    left: 0px;
+    top: 0px;
+    width: 100%;
+    height: 100%;
+    z-index: 999999;
+    background-color: #ffffff;
+    background-image: url(../images/logo/35.gif);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 50px;
+    }
+.header{
+	background-color:#ff3399;
+	color: #fff;
+	padding: 5px 0;
+	
+}
+.header p{
+	margin-bottom: 1px;
+	font-size:16px;
+	letter-spacing: 2px;
+}	
+
+	/*Navbar CSS*/
+.navbar{
+	position: sticky;
+	margin-bottom: 0;
+	background-color: #fff !important;
+	color:black;
+	font-size: 17px;
+	line-height: 1.42857143 !important;
+	letter-spacing: 2px;
+	border:0;
+}
+
+#myproduct{
+	position: absolute;
+	top: 0;
+	z-index: 9999;
+}
+
+	/*Carousel CSS*/
+.mybanner{
+	/*height: 650px;*/		/*Cutomize height*/
+	background-size: cover;
+	background-position: center;
+}
+.carousel-inner img{
+	width: 100%;
+}
+
+.carousel-indicators li {
+  border-color: #ff3399;
+}
+.carousel-indicators li.active {
+  background-color:#ff3399;
+}
+.carousel-control.right, .carousel-control.left{
+	background-image: none;
+	color:#ff3399;
+}
+
+	/*About Services CSS*/
+.services
+{
+	width: 100%;
+	height: 20vh;
+	line-height: 20vh;
+	background-image: url(../images/bg-image-2.jpg);
+	object-fit: cover;
+	background-size: cover;
+	background-position: center;
+}	
+.services span{
+	font-size: 20px;
+	font-weight: 900;
+}
+.icons{
+	margin-right: 5px;
+	font-size: 20px;
+	color:#ff3399;
+}
+
+/*Featured Products CSS*/
+.product h3{
+	padding-bottom: 20px!important;
+}
+.product h3:before{
+	content: "";
+	position: absolute;
+	margin-top: 30px;
+	background-color:#ff3399;
+	margin-left: 40px;
+	height: 5px;
+	width: 120px; 
+}
+img.thumbnail-image{
+	height:300px;
+	object-fit: cover;
+}
+.thumbnail a{
+	position: relative;
+}
+.btn{
+	padding: 5px 10px;
+	font-size: 16px;
+	background-color:#ff3399;
+	color: #fff;
+	margin: 5px auto;
+	border-radius: 15px;
+	border:1px solid #ff3399;
+	transition: 0.5s;
+	transition-property:background;
+}
+.btn:focus{
+	outline: none !important;
+}
+.btn:hover{
+	background:#fff;
+	color:#ff3399; 
+}
+/*Formal collection CSS*/
+.item h4{
+	font-style: italic;
+	margin: 100px 0;
+}
+
+/*product zoom css*/
+.zoom {
+		display:inline-block;
+		position: relative;
+	}
+
+/*Shirt size button css*/
+.main-size-div{
+	position: relative;
+	display: flex;
+}
+.shirt-size{
+	background:#ffffff;
+	border:1px solid #ff3399;
+	margin: 10px 10px 10px 0px;
+	border-radius: 50%;
+	padding: 10px 15px;
+}
+.shirt-size1{
+	background:#ffffff;
+	border:1px solid #ff3399;
+	margin: 10px 10px 10px 0px;
+	border-radius: 50%;
+	padding: 10px 16px;
+}
+.shirt-size2{
+	background:#ffffff;
+	border:1px solid #ff3399;
+	margin: 10px 10px 10px 0px;
+	border-radius: 50%;
+	padding: 10px 12px;
+}
+
+/*Modal Width*/
+.modal-dialog{
+	width: 450px;
+}
+/*Remove up/down arrow in input type number*/
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+
+/*Footer CSS*/
+.footer{
+	background-color: lightgrey;
+	padding: 20px;
+	
+}
+.footer .service-logo img{
+	height: 40px;
+	width: 40px;
+}
+.footer .app-store img{
+	width: 120px;
+	height: 40px;
+}
+.follow-us{
+	margin-top:50px;
+}
+.social-icons{
+	margin-left: 40px;
+}
+.social-icons a img{
+	width: 30px;
+	height: 30px;
+	margin-right: 5px;
+}
+.signup-with{
+	text-align:center;
+}
+.signup-with img{
+	width: 300px;
+	height: 40px;
+	margin-bottom: 20px;
+	object-fit: cover;
+}
+.fa-chevron-up{
+	font-size: 25px;
+	background:#ff3399;
+	color: #fff;
+	padding: 8px 8px;
+	border-radius: 50%;
+	cursor: pointer;
+}
+.fa-chevron-up:hover{
+	background:#e03c8e;
+	transition:.5s;
+}
+
+/*<<<<<<<<<<<< Media Query>>>>>>>>>>>>*/
+
+/* small devices (phones, 600px and down) */
+@media only screen and (max-width: 768px) {
+	.services
+{
+	width: 100%;
+	background-image: url(../images/bg-image-2.jpg);
+}	
+.services span{
+	font-size: 16px;
+	font-weight: 600;
+}
+.services .col-xs-4{
+	padding: 0px 5px;
+}
+.icons{
+	margin-right: 2px;
+	font-size: 14px;
+	color:#ff3399;
+}
+
+@media only screen and (max-width: 600px){
+	.services
+{
+	width: 100%;
+	height: 10vh;
+	line-height: 10vh;
+	background-image: url(../images/bg-image-2.jpg);
+}	
+	.services span{
+		font-size: 12px;
+		font-weight: 600;
+}
+}
+
+/*Media Query for modal on small devices*/
+	
+/* Extra small devices (phones, 768px and down)*/
+@media only screen and (max-width: 768px){
+	.modal-dialog
+	{
+		width: 350px;
+	}
+}
+
+/* Extra small devices (phones, 600px and down)*/
+@media only screen and (max-width: 600px){
+	.modal-dialog
+	{
+		width: 300px;
+	}
+}
